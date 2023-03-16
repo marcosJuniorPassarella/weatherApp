@@ -5,8 +5,45 @@
 
     <div class="weather-data">
       <div class="location">Wellington</div>
-      <div class="temperature">{{ 14.40 | number: '1.0-0'}}°C</div>
+      <div class="temperature">{{ 14.4 | number : "1.0-0" }}°C</div>
     </div>
   </div>
-  <div class="lower-data"></div>
+  <div class="lower-data">
+    <div class="more-info-label">More information</div>
+
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <fa-icon size="lg" [icon]="minTemperatureIcon"></fa-icon>
+          <span>Min</span>
+        </div>
+
+        <div class="info-block-value">10°C</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <fa-icon size="lg" [icon]="maxTemperatureIcon"></fa-icon>
+          <span>Max</span>
+        </div>
+
+        <div class="info-block-value">30°C</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <fa-icon size="lg" [icon]="humidityIcon"></fa-icon>
+          <span>Humidity</span>
+        </div>
+
+        <div class="info-block-value">77%</div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <fa-icon size="lg" [icon]="windIcon"></fa-icon>
+          <span>Wind</span>
+        </div>
+
+        <div class="info-block-value">11 km/h</div>
+      </div>
+    </div>
+  </div>
 </div>
