@@ -1,6 +1,7 @@
 import { NgModule, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { PrimeNGConfig } from 'primeng/api';
 import { CardModule } from 'primeng/card';
@@ -19,9 +20,12 @@ import { WeatherHomeComponent } from './modules/weather/components/weather-home/
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    // FontAwesome
+    FontAwesomeModule,
     // PrimeNg
     CardModule,
-    ButtonModule
+    ButtonModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
