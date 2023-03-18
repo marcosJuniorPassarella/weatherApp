@@ -1,6 +1,20 @@
 <div class="search">
-  <form>
-    <input type="text" placeholder="Buscar localização">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input
+      type="text"
+      placeholder="Buscar localização"
+      name="city"
+      [(ngModel)]="cityName"
+    />
+    <span (click)="onSubmit()">
+      <fa-icon
+        animation="fade"
+        style="--fa-animation-duration: 5s"
+        size="lg"
+        class="search-icon"
+        [icon]="searchIcon"
+      ></fa-icon>
+    </span>
   </form>
 </div>
 
