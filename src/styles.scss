@@ -1,11 +1,10 @@
 :root {
-  --blue-1: #3c429e;
-  --blue-2: #4c52ad;
-  --yellow-1: #fac742;
+  --blue-1: #2242c2;
+  --blue-2: #0368ec;
   --white: #fff;
   --grey-1: #ededed;
   --shadow-dark: rgba(0, 0, 0, 0.3);
-  --shadow-light: rgba(255, 255, 255, 0.1);
+  --shadow-light: rgba(255, 255, 255, 0.277);
 }
 
 * {
@@ -30,12 +29,12 @@ fa-icon {
 }
 
 .container {
-  width: 400px;
+  width: 500px;
   height: 80vh;
   background-color: var(--blue-2);
   border-radius: 20px;
   box-shadow: 10px 10px 10px var(--shadow-dark);
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .upper-data {
@@ -93,7 +92,7 @@ fa-icon {
 
 .more-info-label {
   color: var(--white);
-  font-size: 1.5em;
+  font-size: 1.9em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,7 +109,8 @@ fa-icon {
   border-top-right-radius: 20px;
   margin-top: 1em;
   margin-bottom: 1em;
-
+  margin-left: 1em;
+  margin-right: 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
