@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faTemperatureHigh, faTemperatureLow, faWind, faDroplet, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 import { WeatherService } from '../../services/weather.service';
 import { WeatherDatas } from 'src/app/models/weather.interface';
 
@@ -10,18 +11,13 @@ import { WeatherDatas } from 'src/app/models/weather.interface';
 })
 export class WeatherHomeComponent implements OnInit {
   weatherDatas!: WeatherDatas;
-  cityName: string = 'São Paulo';
-
-  minTemperatureIcon = faTemperatureLow;
-  maxTemperatureIcon = faTemperatureHigh;
-  humidityIcon = faDroplet;
-  windIcon = faWind;
+  initialCityName: string = 'São Paulo';
   searchIcon = faMagnifyingGlass;
 
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
-    this.getWeatherDatas(this.cityName);
+    this.getWeatherDatas(this.initialCityName);
   }
 
   getWeatherDatas(cityName: string): void {
@@ -35,7 +31,7 @@ export class WeatherHomeComponent implements OnInit {
   }
 
   onSubmit(): void {
-    this.getWeatherDatas(this.cityName);
-    this.cityName = '';
+    this.getWeatherDatas(this.initialCityName);
+    this.initialCityName = '';
   }
 }
