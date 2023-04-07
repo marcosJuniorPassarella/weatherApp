@@ -102,7 +102,7 @@ fa-icon {
 
 .more-info-container {
   flex: 1;
-  background-color: var(--shadow-light);
+  background-color: var(--shadow-dark);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -152,12 +152,12 @@ fa-icon {
 }
 
 .search input {
-  background-color: var(--shadow-light);
+  background-color: var(--shadow-dark);
   outline: none;
   border: none;
   border-radius: 20px;
   padding: 1em;
-  color: var(--grey-1);
+  color: #fff;
   font-size: 0.8em;
   text-align: center;
   width: 70%;
