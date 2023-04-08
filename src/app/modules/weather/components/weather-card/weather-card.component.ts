@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { faTemperatureHigh, faTemperatureLow, faWind, faDroplet, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faTemperatureHigh, faTemperatureLow, faWind, faDroplet } from '@fortawesome/free-solid-svg-icons';
 
 import { WeatherDatas } from '../../../../models/weather.interface';
 
